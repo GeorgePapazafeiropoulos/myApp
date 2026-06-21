@@ -14,10 +14,12 @@ with st.sidebar:
     user_input = st.text_input("Enter something")
     option = st.selectbox("Choose option", ["Option 1", "Option 2"])
 
-# Main content
-if user_input:
-    st.write(f"You entered: {user_input}")
-
 # Display data
 st.subheader("Data Display")
 # Add charts, tables, etc.
+
+# Main content
+st.write(f"The selected option is: {option}")
+if user_input:
+    st.write(f"You entered: {user_input}")
+
